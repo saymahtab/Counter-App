@@ -13,6 +13,10 @@ const App = () => {
     setSteps([...steps, stepSize]);
   };
 
+  const handleDelete = (step) => {
+    setSteps(steps.filter(stp => stp != step))
+  }
+
   return (
     <div className="min-h-screen items-center flex justify-center ">
       <div className="flex items-center justify-center flex-col gap-12 bg-gray-100 w-xl p-2 sm:p-5 rounded-2xl mx-5">
@@ -22,6 +26,7 @@ const App = () => {
           steps={steps}
           selectedStepSize={selectedStepSize}
           setSelectedStepSize={setSelectedStepSize}
+          handleDelete={handleDelete}
         />
         <CustomSize addStepSize={addStepSize} />
       </div>

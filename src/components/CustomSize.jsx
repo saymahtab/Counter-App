@@ -9,7 +9,7 @@ const CustomSize = ({ addStepSize }) => {
     e.preventDefault();
     if(stepSize.trim()) {
       addStepSize(stepSize)
-      toast.success('Step added 😊')
+      toast.success('Step added')
     }
     setStepSize('')
   }
@@ -30,7 +30,7 @@ const CustomSize = ({ addStepSize }) => {
         />
         <button
           type="submit"
-          className="bg-cyan-600 text-sm w-full text-white px-6 active:scale-[98%] py-2 outline-none rounded-lg hover:bg-cyan-700 transition-all duration-200 cursor-pointer"
+          className="bg-cyan-600 text-sm w-full text-white px-6 active:scale-[98%] py-3 outline-none rounded-lg hover:bg-cyan-700 transition-all duration-200 cursor-pointer"
         >
           Add
         </button>

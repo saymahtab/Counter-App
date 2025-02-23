@@ -2,7 +2,7 @@
 
 const Header = () => {
   return (
-    <div className="flex  flex-col items-center gap-2">
+    <div className="flex  flex-col items-center gap-2 mt-3">
       <h1 className="text-cyan-800 font-bold text-2xl font-sans transition-all duration-300">
         Counter App
       </h1>
